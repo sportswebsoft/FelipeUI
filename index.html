@@ -29,7 +29,9 @@
 
     <nav class="yamm navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container w-100">
-        <a class="navbar-brand" href="#">Yamm Megamenu</a>
+        <a class="navbar-brand" href="#">
+          <img src="./assets/gmc-logo.png" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -41,9 +43,19 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse" id="navbar-collapse-1">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown yamm-fw">
+        <div
+          class="navbar-collapse collapse flex-column align-items-start"
+          id="navbar-collapse-1"
+        >
+          <div class="d-flex justify-content-between mb-lg-3 w-100">
+            <span class="pl-2 d-none d-lg-block">Greater Miami Conference</span>
+            <div>
+              <a class="pl-0 pl-lg-3 mobile-nav-link text-gray" href="#">Schools</a>
+              <a class="pl-0 pl-lg-4 mobile-nav-link text-gray" href="#">Tickets</a>
+            </div>
+          </div>
+          <ul class="navbar-nav mr-auto flex-row" id="ul-main-menu">
+            <li class="nav-item dropdown yamm-fw pr-lg-4">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                 Fall Sports
               </a>
@@ -64,7 +76,7 @@
               </div>
             </li>
 
-            <li class="nav-item dropdown yamm-fw">
+            <li class="nav-item dropdown yamm-fw px-lg-4">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                 Winter Sports
               </a>
@@ -85,7 +97,7 @@
               </div>
             </li>
 
-            <li class="nav-item dropdown yamm-fw">
+            <li class="nav-item dropdown yamm-fw px-lg-4">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                 Spring Sports
               </a>
@@ -104,7 +116,7 @@
               </div>
             </li>
 
-            <li class="nav-item dropdown yamm-fw">
+            <li class="nav-item dropdown yamm-fw px-lg-4">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                 Awards
               </a>
@@ -118,7 +130,7 @@
               </div>
             </li>
 
-            <li class="nav-item dropdown yamm-fw">
+            <li class="nav-item dropdown yamm-fw px-lg-4">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                 History
               </a>
@@ -132,7 +144,7 @@
               </div>
             </li>
 
-            <li class="nav-item dropdown yamm-fw">
+            <li class="nav-item dropdown yamm-fw px-lg-4">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                 More
               </a>
@@ -149,7 +161,7 @@
       </div>
     </nav>
 
-    <div class="container vh-full mt-100px">
+    <div class="container vh-full mt-160px">
       <div class="jumbotron">
         <h1 class="display-4">Hello, world!</h1>
         <p class="lead">
