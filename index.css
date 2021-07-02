@@ -9,3 +9,11 @@
 .text-gray {
   color: rgba(0, 0, 0, 0.5);
 }
+
+.text-dark-gray {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.yamm-content .list-group-flush a {
+  color: rgba(0, 0, 0, 0.9);
+}

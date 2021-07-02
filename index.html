@@ -20,7 +20,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/geedmo/yamm@4.0.0/dist/yamm.min.css"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="./index.css" />
     <title>Sportsweb UI</title>
   </head>
@@ -62,15 +69,44 @@
               <div class="dropdown-menu p-0">
                 <div class="yamm-content">
                   <div class="row">
-                    <a class="col-12 col-md-4 p-3" href="#">Football</a>
-                    <a class="col-12 col-md-4 p-3" href="#">Girls Volleyball</a>
-                    <a class="col-12 col-md-4 p-3" href="#">Boys Soccer</a>
-                    <a class="col-12 col-md-4 p-3" href="#">Girls Soccer</a>
-                    <a class="col-12 col-md-4 p-3" href="#">Boys Cross Country</a>
-                    <a class="col-12 col-md-4 p-3" href="#">Girls Cross Country</a>
-                    <a class="col-12 col-md-4 p-3" href="#">Boys Golf</a>
-                    <a class="col-12 col-md-4 p-3" href="#">Girls Golf</a>
-                    <a class="col-12 col-md-4 p-3" href="#">Girls Tennis</a>
+                    <div class="col-12 col-md-4">
+                      <ul class="list-group-flush">
+                        <li class="list-group-item font-weight-bold">
+                          <span>Girls</span>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#">Girls Volleyball</a>
+                        </li>
+                        <li class="list-group-item"><a href="#">Girls Soccer</a></li>
+                        <li class="list-group-item">
+                          <a href="#">Girls Cross Country</a>
+                        </li>
+                        <li class="list-group-item"><a href="#">Girls Golf</a></li>
+                        <li class="list-group-item"><a href="#">Girls Tennis</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <ul class="list-group-flush">
+                        <li class="list-group-item font-weight-bold">
+                          <span>Boys</span>
+                        </li>
+                        <li class="list-group-item"><a href="#">Boys Soccer</a></li>
+                        <li class="list-group-item">
+                          <a href="#">Boys Cross Country</a>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#">Boys Golf</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <ul class="list-group-flush">
+                        <li class="list-group-item font-weight-bold">
+                          <span>Mixed</span>
+                        </li>
+                        <li class="list-group-item"><a href="#">Football</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -173,7 +209,14 @@
           It uses utility classes for typography and spacing to space content out within
           the larger container.
         </p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <div class="row">
+          <div class="col-6">
+            <button class="btn btn-primary" id="swal-open-btn">Sweet Alert Modal</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-success" id="alertify-open-btn">Alertify Modal</button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -188,6 +231,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.1/holder.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script></script>
     <script src="./index.js"></script>
   </body>
 </html>
