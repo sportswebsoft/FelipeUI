@@ -32,8 +32,7 @@
     <title>Sportsweb UI</title>
   </head>
   <body>
-    <!-- <nav class="yamm navbar navbar-expand-lg navbar-light bg-light"> -->
-
+    <!-- Navbar start -->
     <nav class="yamm navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container w-100">
         <a class="navbar-brand" href="#">
@@ -196,8 +195,18 @@
         </div>
       </div>
     </nav>
+    <!-- Navbar end -->
 
-    <div class="container vh-full mt-160px">
+    <div class="container vh-full mt-122px">
+      <div class="row py-4" id="top-ad">
+        <div class="col-xs-12 w-100 text-center">
+          <a href="https://www.google.com" target="_blank">
+            <img src="./assets/beaconsoccer.png" />
+          </a>
+        </div>
+      </div>
+      <div class="row"></div>
+
       <div class="jumbotron">
         <h1 class="display-4">Hello, world!</h1>
         <p class="lead">
@@ -215,6 +224,16 @@
           </div>
           <div class="col-6">
             <button class="btn btn-success" id="alertify-open-btn">Alertify Modal</button>
+          </div>
+        </div>
+        <div class="row mt-16px">
+          <div class="col">
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="toggle-top-ad" />
+              <label class="custom-control-label" for="toggle-top-ad"
+                >Toggle top ad</label
+              >
+            </div>
           </div>
         </div>
       </div>

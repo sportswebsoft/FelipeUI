@@ -62,4 +62,13 @@ $(function () {
       }
     });
   });
+
+  /*Toggles*/
+  $("#toggle-top-ad").click(function () {
+    if ($("#top-ad").is(":visible")) {
+      $("#top-ad").addClass("d-none");
+    } else {
+      $("#top-ad").removeClass("d-none");
+    }
+  });
 });
