@@ -5,9 +5,13 @@ $(document).on("click", ".yamm .dropdown-menu", function (e) {
 $(function () {
   const updateMainNavbar = function () {
     if ($(window).width() < 992) {
+      $("#top-ad-img").attr("src", "./assets/beaconsoccer-mobile.png");
+      $("#middle-ad-img").attr("src", "./assets/themotzgroup-mobile.png");
       $(".ul-main-menu").removeClass("flex-row");
       $(".mobile-nav-link").addClass("nav-link");
     } else {
+      $("#top-ad-img").attr("src", "./assets/beaconsoccer.png");
+      $("#middle-ad-img").attr("src", "./assets/themotzgroup.jpg");
       $(".ul-main-menu").addClass("flex-row");
       $(".mobile-nav-link").removeClass("nav-link");
     }
@@ -106,10 +110,10 @@ $(function () {
   $("#toggle-panel-ad").click(function () {
     if ($("#panel-ad").is(":visible")) {
       $("#panel-ad").addClass("d-none");
-      $("#col-main-content").removeClass("col-9").addClass("col-12");
+      $("#col-main-content").removeClass("col-sm-9").addClass("col-sm-12");
     } else {
       $("#panel-ad").removeClass("d-none");
-      $("#col-main-content").removeClass("col-12").addClass("col-9");
+      $("#col-main-content").removeClass("col-sm-12").addClass("col-sm-9");
     }
   });
 });
