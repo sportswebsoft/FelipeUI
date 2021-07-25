@@ -5,10 +5,10 @@ $(document).on("click", ".yamm .dropdown-menu", function (e) {
 $(function () {
   const updateMainNavbar = function () {
     if ($(window).width() < 992) {
-      $("#ul-main-menu").removeClass("flex-row");
+      $(".ul-main-menu").removeClass("flex-row");
       $(".mobile-nav-link").addClass("nav-link");
     } else {
-      $("#ul-main-menu").addClass("flex-row");
+      $(".ul-main-menu").addClass("flex-row");
       $(".mobile-nav-link").removeClass("nav-link");
     }
   };
@@ -61,6 +61,17 @@ $(function () {
         swal("You cancelled");
       }
     });
+  });
+
+  /*Year select*/
+
+  // Default value is 2021
+  $("#selected-year").text("2021");
+
+  // Handle onChange
+  $("#year-select").change(function () {
+    var selectedValue = $(this).val();
+    $("#selected-year").text(selectedValue);
   });
 
   /*Toggles*/

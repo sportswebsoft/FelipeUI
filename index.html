@@ -60,7 +60,7 @@
               <a class="pl-0 pl-lg-4 mobile-nav-link text-gray" href="#">Tickets</a>
             </div>
           </div>
-          <ul class="navbar-nav mr-auto flex-row" id="ul-main-menu">
+          <ul class="navbar-nav mr-auto flex-row ul-main-menu">
             <li class="nav-item dropdown yamm-fw pr-lg-4">
               <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
                 Fall Sports
@@ -197,7 +197,10 @@
     </nav>
     <!-- Navbar end -->
 
+    <!-- Main container -->
     <div class="container vh-full mt-122px">
+
+      <!-- Top Ad -->
       <div class="row py-4" id="top-ad">
         <div class="col-xs-12 w-100 text-center">
           <a href="https://www.google.com" target="_blank">
@@ -205,18 +208,91 @@
           </a>
         </div>
       </div>
-      <div class="row"></div>
 
-      <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
+      <!-- Inner navbar start -->
+      <div class="yamm navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container w-100">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-collapse-2"
+            aria-controls="navbar-collapse-2"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="navbar-collapse collapse flex-column align-items-start"
+            id="navbar-collapse-2"
+          >
+            <div class="d-flex justify-content-between mb-lg-3 w-100">
+              <span class="pl-2 d-none d-lg-block"><h4>Football</h4></span>
+            </div>
+            <ul class="navbar-nav mr-auto flex-row ul-main-menu">
+              <li class="nav-item dropdown yamm-fw pr-lg-4">
+                <li class="nav-item dropdown yamm-fw pr-lg-4">
+                  <select class="custom-select" id="year-select">
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                  </select>
+                </li>
+              </li>
+              <li class="nav-item dropdown yamm-fw px-lg-4">
+                <a class="nav-link" href="#">
+                  Standings
+                </a>                
+              </li>
+
+              <li class="nav-item dropdown yamm-fw px-lg-4">
+                <a class="nav-link" href="#">
+                  Schedule
+                </a>                
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Teams</a>
+                <div class="dropdown-menu" role="menu">
+                  <a class="dropdown-item" tabindex="-1" href="#">Colerain</a>
+                  <a class="dropdown-item" tabindex="-1" href="#">Fairfield</a>
+                  <a class="dropdown-item" tabindex="-1" href="#">Hamilton</a>
+                  <a class="dropdown-item" tabindex="-1" href="#">Lakota East</a>                  
+                </div>
+              </li>
+
+              <li class="nav-item dropdown yamm-fw px-lg-4">
+                <a class="nav-link" href="#">
+                  Statistics
+                </a>                
+              </li>
+
+              <li class="nav-item dropdown yamm-fw px-lg-4">
+                <a class="nav-link" href="#">
+                  All conference teams
+                </a>                
+              </li>
+
+              <li class="nav-item dropdown yamm-fw px-lg-4">
+                <a class="nav-link" href="#">
+                  Champions
+                </a>                
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Inner navbar end -->
+
+      <div class="jumbotron">        
         <p class="lead">
-          This is a simple hero unit, a simple jumbotron-style component for calling extra
-          attention to featured content or information.
+          The selected year is <span id="selected-year"></span>
         </p>
         <hr class="my-4" />
         <p>
-          It uses utility classes for typography and spacing to space content out within
-          the larger container.
+          Modal examples:
         </p>
         <div class="row">
           <div class="col-6">
