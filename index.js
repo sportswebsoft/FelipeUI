@@ -63,8 +63,20 @@ $(function () {
     });
   });
 
-  /*Year select*/
+  const capitalizeFirstLetter = (input) => input.charAt(0).toUpperCase() + input.slice(1);
 
+  /*Inner navigation*/
+  $("#inner-nav .nav-link").click(function (event) {
+    event.preventDefault();
+    const currentContent = event.target.hash;
+
+    $("#inner-nav .nav-link").removeClass("navigation-active");
+    $(this).addClass("navigation-active");
+
+    $("#current-content").text(capitalizeFirstLetter(currentContent.substring(1)));
+  });
+
+  /*Year select*/
   // Default value is 2021
   $("#selected-year").text("2021");
 

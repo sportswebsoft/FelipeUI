@@ -25,3 +25,7 @@
 #col-main-content .jumbotron {
   height: calc(100vh - 200px);
 }
+
+.navigation-active {
+  border-bottom: 2.5px solid blue;
+}

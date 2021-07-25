@@ -210,7 +210,7 @@
       </div>
 
       <!-- Inner navbar start -->
-      <div class="yamm navbar navbar-expand-lg navbar-light bg-light mt-4">
+      <div class="yamm navbar navbar-expand-lg navbar-light bg-light mt-4" id="inner-nav">
         <div class="container w-100">
           <button
             class="navbar-toggler"
@@ -241,19 +241,19 @@
                 </li>
               </li>
               <li class="nav-item dropdown yamm-fw px-lg-4">
-                <a class="nav-link" href="#">
+                <a class="nav-link navigation-active" href="#standings">
                   Standings
                 </a>                
               </li>
 
               <li class="nav-item dropdown yamm-fw px-lg-4">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#schedule">
                   Schedule
                 </a>                
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Teams</a>
+                <a class="nav-link dropdown-toggle" href="#teams" data-toggle="dropdown">Teams</a>
                 <div class="dropdown-menu" role="menu">
                   <a class="dropdown-item" tabindex="-1" href="#">Colerain</a>
                   <a class="dropdown-item" tabindex="-1" href="#">Fairfield</a>
@@ -263,19 +263,19 @@
               </li>
 
               <li class="nav-item dropdown yamm-fw px-lg-4">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#statistics">
                   Statistics
                 </a>                
               </li>
 
               <li class="nav-item dropdown yamm-fw px-lg-4">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#conference">
                   All conference teams
                 </a>                
               </li>
 
               <li class="nav-item dropdown yamm-fw px-lg-4">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#champions">
                   Champions
                 </a>                
               </li>
@@ -299,7 +299,8 @@
         <div class="col-9" id="col-main-content">
           <div class="jumbotron mt-4">        
             <p class="lead">
-              The selected year is <span id="selected-year"></span>
+              <h5>Current content: Football > <span id="current-content">Standings</span></h5>
+              Selected year: <span id="selected-year"></span>
             </p>
             <hr class="my-4" />
             <p>
@@ -355,8 +356,7 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.1/holder.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-    <script></script>
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>    
     <script src="./index.js"></script>
   </body>
 </html>
