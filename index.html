@@ -201,7 +201,7 @@
     <div class="container vh-full mt-122px">
 
       <!-- Top Ad -->
-      <div class="row py-4" id="top-ad">
+      <div class="row pt-4" id="top-ad">
         <div class="col-xs-12 w-100 text-center">
           <a href="https://www.google.com" target="_blank">
             <img src="./assets/beaconsoccer.png" />
@@ -210,7 +210,7 @@
       </div>
 
       <!-- Inner navbar start -->
-      <div class="yamm navbar navbar-expand-lg navbar-light bg-light">
+      <div class="yamm navbar navbar-expand-lg navbar-light bg-light mt-4">
         <div class="container w-100">
           <button
             class="navbar-toggler"
@@ -286,31 +286,59 @@
       </div>
       <!-- Inner navbar end -->
 
-      <div class="jumbotron">        
-        <p class="lead">
-          The selected year is <span id="selected-year"></span>
-        </p>
-        <hr class="my-4" />
-        <p>
-          Modal examples:
-        </p>
-        <div class="row">
-          <div class="col-6">
-            <button class="btn btn-primary" id="swal-open-btn">Sweet Alert Modal</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-success" id="alertify-open-btn">Alertify Modal</button>
-          </div>
+      <!-- Middle Ad -->
+      <div class="row pt-4" id="middle-ad">
+        <div class="col-xs-12 w-100 text-center">
+          <a href="https://www.google.com" target="_blank">
+            <img src="./assets/themotzgroup.jpg" />
+          </a>
         </div>
-        <div class="row mt-16px">
-          <div class="col">
-            <div class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="toggle-top-ad" />
-              <label class="custom-control-label" for="toggle-top-ad"
-                >Toggle top ad</label
-              >
+      </div>
+
+      <div class="row">
+        <div class="col-9" id="col-main-content">
+          <div class="jumbotron mt-4">        
+            <p class="lead">
+              The selected year is <span id="selected-year"></span>
+            </p>
+            <hr class="my-4" />
+            <p>
+              Modal examples:
+            </p>
+            <div class="row">
+              <div class="col-6">
+                <button class="btn btn-primary" id="swal-open-btn">Sweet Alert Modal</button>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-success" id="alertify-open-btn">Alertify Modal</button>
+              </div>
+            </div>
+            <div class="row mt-16px">
+              <div class="col-12">
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" id="toggle-top-ad" />
+                  <label class="custom-control-label" for="toggle-top-ad">Hide top ads</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" id="toggle-middle-ad" />
+                  <label class="custom-control-label" for="toggle-middle-ad">Hide middle ads</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" id="toggle-panel-ad" />
+                  <label class="custom-control-label" for="toggle-panel-ad">Hide panel ads</label>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="col-3 text-center mt-4" id="panel-ad">
+          <a href="https://www.google.com" target="_blank">
+            <img src="./assets/panelads.png" />
+          </a>
         </div>
       </div>
     </div>

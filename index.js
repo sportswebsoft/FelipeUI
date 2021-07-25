@@ -82,4 +82,22 @@ $(function () {
       $("#top-ad").removeClass("d-none");
     }
   });
+
+  $("#toggle-middle-ad").click(function () {
+    if ($("#middle-ad").is(":visible")) {
+      $("#middle-ad").addClass("d-none");
+    } else {
+      $("#middle-ad").removeClass("d-none");
+    }
+  });
+
+  $("#toggle-panel-ad").click(function () {
+    if ($("#panel-ad").is(":visible")) {
+      $("#panel-ad").addClass("d-none");
+      $("#col-main-content").removeClass("col-9").addClass("col-12");
+    } else {
+      $("#panel-ad").removeClass("d-none");
+      $("#col-main-content").removeClass("col-12").addClass("col-9");
+    }
+  });
 });
