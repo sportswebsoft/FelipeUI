@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+        integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni"
+        crossorigin="anonymous"/>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/geedmo/yamm@4.0.0/dist/yamm.min.css"/>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css"/>
+    @await RenderSectionAsync("Styles", false)
+</head>
+<body>
+
+<!-- Navbar start -->
+<nav class="yamm navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container w-100">
+        <a class="navbar-brand" href="#">
+            <img src="~/assets/gmc-logo.png"/>
+        </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-collapse-1"
+            aria-controls="navbar-collapse-1"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+            class="navbar-collapse collapse flex-column align-items-start"
+            id="navbar-collapse-1">
+            <div class="d-flex justify-content-between mb-lg-3 w-100">
+                <span class="pl-2 d-none d-lg-block">Greater Miami Conference</span>
+                <div>
+                    <a class="pl-0 pl-lg-3 mobile-nav-link text-gray" href="#">Schools</a>
+                    <a class="pl-0 pl-lg-4 mobile-nav-link text-gray" href="#">Tickets</a>
+                </div>
+            </div>
+            <ul class="navbar-nav mr-auto flex-row ul-main-menu">
+                <li class="nav-item dropdown yamm-fw pr-lg-4">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        Fall Sports
+                    </a>
+                    <div class="dropdown-menu p-0">
+                        <div class="yamm-content">
+                            <div class="row">
+                                <a class="col-12 col-md-4 p-3" href="#">Girls Volleyball</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Girls Soccer</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Girls Cross Country</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Girls Golf</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Girls Tennis</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Boys Soccer</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Boys Cross Country</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Boys Golf</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Football</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown yamm-fw px-lg-4">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        Winter Sports
+                    </a>
+                    <div class="dropdown-menu p-0">
+                        <div class="yamm-content">
+                            <div class="row">
+                                <a class="col-12 col-md-4 p-3" href="#">Boys Basketball</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Girls Basketball</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Wrestling</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Boys Swimming</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Girls Swimming</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Boys Bowling</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Girls Bowling</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Chess</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Academic</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown yamm-fw px-lg-4">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        Spring Sports
+                    </a>
+                    <div class="dropdown-menu p-0">
+                        <div class="yamm-content">
+                            <div class="row">
+                                <a class="col-12 col-md-4 p-3" href="#">Baseball</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Softball</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Boys Track</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Girls Track</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Boys Tennis</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Boys Lacrosse</a>
+                                <a class="col-12 col-md-4 p-3" href="#">Girls Lacrosse</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown yamm-fw px-lg-4">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        Awards
+                    </a>
+                    <div class="dropdown-menu p-0">
+                        <div class="yamm-content">
+                            <div class="row">
+                                <a class="col-12 p-3" href="#">Athletes of the Week</a>
+                                <a class="col-12 p-3" href="#">All Sports Trophy</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown yamm-fw px-lg-4">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        History
+                    </a>
+                    <div class="dropdown-menu p-0">
+                        <div class="yamm-content">
+                            <div class="row">
+                                <a class="col-12 p-3" href="#">State Champions</a>
+                                <a class="col-12 p-3" href="#">Conference History</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown yamm-fw px-lg-4">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                        More
+                    </a>
+                    <div class="dropdown-menu p-0">
+                        <div class="yamm-content">
+                            <div class="row">
+                                <a class="col-12 p-3" href="#">By-Laws</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navbar end -->
+
+<!-- Main container -->
+<div class="container vh-full mt-122px">
+
+    <!-- Top Ad -->
+    <div class="row pt-4" id="top-ad">
+        <div class="col-xs-12 w-100 text-center">
+            <a href="https://www.google.com" target="_blank">
+                <img src="~/assets/beaconsoccer.png" id="top-ad-img"/>
+            </a>
+        </div>
+    </div>
+
+    <!-- Inner navbar start -->
+    <div class="yamm navbar navbar-expand-lg navbar-light bg-light mt-4" id="inner-nav">
+        <div class="container w-100">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbar-collapse-2"
+                aria-controls="navbar-collapse-2"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+                class="navbar-collapse collapse flex-column align-items-start"
+                id="navbar-collapse-2">
+                <div class="d-flex justify-content-between mb-lg-3 w-100">
+                    <span class="pl-2 pt-2">
+                        <h4>Football</h4>
+                    </span>
+                </div>
+                <ul class="navbar-nav mr-auto flex-row ul-main-menu">
+                    <li class="nav-item dropdown yamm-fw pr-lg-4">
+                        <li class="nav-item dropdown yamm-fw pr-lg-4">
+                            <select class="custom-select" id="year-select">
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                            </select>
+                        </li>
+                    </li>
+                    <li class="nav-item dropdown yamm-fw px-lg-4">
+                        <a class="nav-link navigation-active" href="#standings">
+                            Standings
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown yamm-fw px-lg-4">
+                        <a class="nav-link" href="#schedule">
+                            Schedule
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#teams" data-toggle="dropdown">Teams</a>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" tabindex="-1" href="#">Colerain</a>
+                            <a class="dropdown-item" tabindex="-1" href="#">Fairfield</a>
+                            <a class="dropdown-item" tabindex="-1" href="#">Hamilton</a>
+                            <a class="dropdown-item" tabindex="-1" href="#">Lakota East</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown yamm-fw px-lg-4">
+                        <a class="nav-link" href="#statistics">
+                            Statistics
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown yamm-fw px-lg-4">
+                        <a class="nav-link" href="#conference">
+                            All conference teams
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown yamm-fw px-lg-4">
+                        <a class="nav-link" href="#champions">
+                            Champions
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Inner navbar end -->
+
+    <!-- Middle Ad -->
+    <div class="row pt-4" id="middle-ad">
+        <div class="col-xs-12 w-100 text-center">
+            <a href="https://www.google.com" target="_blank">
+                <img src="~/assets/themotzgroup.jpg" id="middle-ad-img"/>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-sm-9" id="col-main-content">
+            @RenderBody()
+        </div>
+        <div class="col-12 col-sm-3 text-center mt-4" id="panel-ad">
+            <a href="https://www.google.com" target="_blank">
+                <img src="~/assets/panelads.png"/>
+            </a>
+        </div>
+    </div>
+</div>
+<footer class="border-top footer text-muted">
+    <div class="container">
+        &copy; 2021 - WebMVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+</footer>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.1/holder.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", false)
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="jumbotron mt-4">
+    <p class="lead">
+        <h5>Current content: Football > <span id="current-content">Standings</span></h5>
+        Selected year: <span id="selected-year"></span>
+    </p>
+    <hr class="my-4"/>
+    <p>
+        Modal examples:
+    </p>
+    <div class="row">
+        <div class="col-6">
+            <button class="btn btn-primary" id="swal-open-btn">Sweet Alert Modal</button>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-success" id="alertify-open-btn">Alertify Modal</button>
+        </div>
+    </div>
+    <div class="row mt-16px">
+        <div class="col-12">
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="toggle-top-ad"/>
+                <label class="custom-control-label" for="toggle-top-ad">Hide top ads</label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="toggle-middle-ad"/>
+                <label class="custom-control-label" for="toggle-middle-ad">Hide middle ads</label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="toggle-panel-ad"/>
+                <label class="custom-control-label" for="toggle-panel-ad">Hide panel ads</label>
+            </div>
+        </div>
+    </div>
+</div>
