@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <!--suppress JSUnresolvedLibraryURL -->
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
@@ -25,7 +26,7 @@
 </head>
 <body>
 
-@await Html.PartialAsync("_NavbarPartial")
+@await Component.InvokeAsync("PageHeader");
 
 <div class="container vh-full mt-122px">
 
@@ -33,7 +34,7 @@
     <div class="row pt-4" id="top-ad">
         <div class="col-xs-12 w-100 text-center">
             <a href="https://www.google.com" target="_blank">
-                <img src="~/assets/beaconsoccer.png" id="top-ad-img"/>
+                <img src="~/assets/beaconsoccer.png" id="top-ad-img" alt="top ad"/>
             </a>
         </div>
     </div>
@@ -44,7 +45,7 @@
     <div class="row pt-4" id="middle-ad">
         <div class="col-xs-12 w-100 text-center">
             <a href="https://www.google.com" target="_blank">
-                <img src="~/assets/themotzgroup.jpg" id="middle-ad-img"/>
+                <img src="~/assets/themotzgroup.jpg" id="middle-ad-img" alt="middle ad"/>
             </a>
         </div>
     </div>
@@ -55,7 +56,7 @@
         </div>
         <div class="col-12 col-sm-3 text-center mt-4" id="panel-ad">
             <a href="https://www.google.com" target="_blank">
-                <img src="~/assets/panelads.png"/>
+                <img src="~/assets/panelads.png" alt="panel ads"/>
             </a>
         </div>
     </div>
