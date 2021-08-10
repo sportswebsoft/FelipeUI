@@ -1,0 +1,33 @@
+﻿{
+  "ColorCode": "5490af",
+  "ConferenceName": "Greater Miami Conference from JSON",
+  "logoFileName": "gmc-logo.png",
+  "MenuHeaders": [
+    {
+      "DisplayTitle": "Fall Sports",
+      "MenuItems": [
+        {
+          "displayName": "Football",
+          "url": "fall-sports/football"
+        },
+        {
+          "displayName": "Girls Volleyball",
+          "url": "fall-sports/girls/volleyball"          
+        }
+      ]
+    },
+    {
+      "displayTitle": "Winter Sports",
+      "menuItems": [
+        {
+          "displayName": "Boys Basketball",
+          "url": "winter-sports/boys/basketball"
+        },
+        {
+          "displayName": "Girls Basketball",
+          "url": "winter-sports/girls/basketball"
+        }
+      ]
+    }
+  ]
+}

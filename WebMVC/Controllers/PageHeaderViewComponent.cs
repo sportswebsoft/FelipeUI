@@ -1,66 +1,31 @@
-﻿using System.Collections.Generic;
+﻿using System.IO;
+using System.Text.Json;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using WebMVC.Models;
 
 namespace WebMVC.Controllers
 {
     public class PageHeaderViewComponent : ViewComponent
     {
+        private readonly string _pathToFile;
+
+        public PageHeaderViewComponent(IWebHostEnvironment env, IConfiguration configuration)
+        {
+            var currentConference = configuration.GetSection("CurrentConference").Value;
+            var s = Path.DirectorySeparatorChar;
+            _pathToFile = $"{env.WebRootPath}{s}resources{s}menu-items{s}{currentConference}.json";
+        }
+
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            // simulates async behaviour (for ex. fetching from DB)
-            PageHeaderModel model = await Task.Run(MockPageHeaderModel);
+            var source = await File.ReadAllTextAsync(_pathToFile);
+            var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+            var model = JsonSerializer.Deserialize<PageHeaderModel>(source, options);
+
             return View("_PageHeaderPartial", model);
-        }
-        
-        private static PageHeaderModel MockPageHeaderModel()
-        {
-            MenuItem football = new()
-            {
-                DisplayName = "Football",
-                Url = "#football"
-            };
-            
-            MenuItem girlsVolleyball = new()
-            {
-                DisplayName = "Girls Volleyball",
-                Url = "#girls-volleyball"
-            };
-            
-            MenuItem boysSoccer = new()
-            {
-                DisplayName = "Boys Soccer",
-                Url = "#boys-soccer"
-            };
-
-            var menuItems = new List<MenuItem>
-            {
-                football,
-                girlsVolleyball,
-                boysSoccer
-            };
-
-            MenuHeader menuHeader = new()
-            {
-                DisplayTitle = "Fall Sports",
-                MenuItems = menuItems
-            };
-
-            var menuHeaderList = new List<MenuHeader>()
-            {
-                menuHeader,
-                menuHeader,
-                menuHeader
-            };
-            
-            return new PageHeaderModel
-            {
-                ConferenceName = "Greater Miami Conference from VIEW COMPONENT",
-                LogoFileName = "gmc-logo.png",
-                ColorCode = "5490af",
-                MenuHeaders = menuHeaderList
-            };
         }
     }
 }
