@@ -1,32 +1,79 @@
 ﻿{
   "ColorCode": "a42357",
-  "ConferenceName": "Miami Valley Conference from JSON",
-  "logoFileName": "gmc-logo.png",
+  "ConferenceName": "Miami Valley Conference",
+  "logoFileName": "mvc-logo.png",
   "MenuHeaders": [
     {
       "DisplayTitle": "Fall Sports",
       "MenuItems": [
-        {
-          "displayName": "Football",
-          "url": "fall-sports/football"
-        },
-        {
-          "displayName": "Girls Volleyball",
-          "url": "fall-sports/girls/volleyball"
-        }
+        "Football",
+        "Girls Volleyball",
+        "Boys Soccer",
+        "Girls Soccer",
+        "Boys Cross Country",
+        "Girls Cross Country",
+        "Boys Golf",
+        "Girls Tennis"
       ]
     },
     {
       "displayTitle": "Winter Sports",
       "menuItems": [
-        {
-          "displayName": "Boys Basketball",
-          "url": "winter-sports/boys/basketball"
-        },
-        {
-          "displayName": "Girls Basketball",
-          "url": "winter-sports/girls/basketball"
-        }
+        "Boys Basketball",
+        "Girls Basketball",
+        "Wrestling",
+        "Boys Swimming",
+        "Girls Swimming",
+        "Boys Bowling",
+        "Girls Bowling"        
+      ]
+    },
+    {
+      "displayTitle": "Spring Sports",
+      "menuItems": [
+        "Baseball",
+        "Softball",
+        "Boys Track",
+        "Girls Track",
+        "Boys Tennis",        
+        "Boys Lacrosse",
+        "Girls Lacrosse"
+      ]
+    },
+    {
+      "displayTitle": "Awards",
+      "menuItems": [
+        "Athlete of the Week",
+        "College Commitments",
+        "Dick Snyder Sportsmanship Award",
+        "Hirsch Award For Courage",
+        "Frank Montgomery / James Wright Award",
+        "Sam Dillard Memorial Preview"
+      ]
+    },
+    {
+      "displayTitle": "History",
+      "menuItems": [        
+        "State Champions"
+      ]
+    },
+    {
+      "displayTitle": "Social Media",
+      "menuItems": [
+        "Twitter",
+        "Facebook"
+      ]
+    },
+    {
+      "displayTitle": "More",
+      "menuItems": [
+        "Ciny High School Sports",
+        "Baum's Page",
+        "GHG Timing",
+        "OHSAA",
+        "OHSAA Southwest District",
+        "NCAA",
+        "NCAA Clearinghouse"
       ]
     }
   ]

@@ -1,32 +1,77 @@
 ﻿{
   "ColorCode": "5490af",
-  "ConferenceName": "Greater Miami Conference from JSON",
+  "ConferenceName": "Greater Miami Conference",
   "logoFileName": "gmc-logo.png",
   "MenuHeaders": [
     {
       "DisplayTitle": "Fall Sports",
       "MenuItems": [
-        {
-          "displayName": "Football",
-          "url": "fall-sports/football"
-        },
-        {
-          "displayName": "Girls Volleyball",
-          "url": "fall-sports/girls/volleyball"          
-        }
+        "Football",
+        "Girls Volleyball",
+        "Boys Soccer",
+        "Girls Soccer",
+        "Boys Cross Country",
+        "Girls Cross Country",
+        "Boys Golf",
+        "Girls Tennis"
       ]
     },
     {
       "displayTitle": "Winter Sports",
       "menuItems": [
-        {
-          "displayName": "Boys Basketball",
-          "url": "winter-sports/boys/basketball"
-        },
-        {
-          "displayName": "Girls Basketball",
-          "url": "winter-sports/girls/basketball"
-        }
+        "Boys Basketball",
+        "Girls Basketball",
+        "Wrestling",
+        "Boys Swimming",
+        "Girls Swimming",
+        "Boys Bowling",
+        "Girls Bowling",
+        "Chess",
+        "Academic"
+      ]
+    },
+    {
+      "displayTitle": "Spring Sports",
+      "menuItems": [
+        "Baseball",
+        "Softball",
+        "Boys Track",
+        "Girls Track",
+        "Boys Tennis",
+        "Boys Volleyball",
+        "Boys Lacrosse",
+        "Girls Lacrosse"        
+      ]
+    },
+    {
+      "displayTitle": "Awards",
+      "menuItems": [
+        "Athlete of the Week",
+        "College Commitments"
+      ]
+    },
+    {
+      "displayTitle": "History",
+      "menuItems": [
+        "All Sports Trophy",
+        "State Champions",
+        "Conference History"
+      ]
+    },
+    {
+      "displayTitle": "Social Media",
+      "menuItems": [
+        "Twitter"        
+      ]
+    },
+    {
+      "displayTitle": "More",
+      "menuItems": [
+        "Ciny High School Sports",
+        "OHSAA",
+        "OHSAA Southwest District",
+        "NCAA",
+        "NCAA Clearinghouse"
       ]
     }
   ]

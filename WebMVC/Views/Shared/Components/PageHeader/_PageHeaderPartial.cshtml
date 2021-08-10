@@ -1,4 +1,5 @@
-﻿@model PageHeaderModel
+﻿@using WebMVC.Extensions
+@model PageHeaderModel
 
 <nav class="yamm navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container w-100">
@@ -39,7 +40,10 @@
                                         @{
                                             foreach (var menuItem in menuHeader.MenuItems)
                                             {
-                                                <a class="col-12 col-md-4 p-3" href="@menuItem.Url">@menuItem.DisplayName</a>
+                                                <a href="@Model.ConferenceNameUrl/@menuHeader.DisplayTitleUrl/@menuItem.SanitizeForUrl()"
+                                                   class="col-12 col-md-4 p-3">
+                                                    @menuItem
+                                                </a>
                                             }
                                         }
                                     </div>

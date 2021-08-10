@@ -1,0 +1,65 @@
+﻿{
+  "ColorCode": "a42357",
+  "ConferenceName": "Grils Greater Catholic League",
+  "logoFileName": "ggcl-logo.png",
+  "MenuHeaders": [
+    {
+      "DisplayTitle": "Fall Sports",
+      "MenuItems": [        
+        "Volleyball",
+        "Soccer",        
+        "Cross Country",        
+        "Golf"        
+      ]
+    },
+    {
+      "displayTitle": "Winter Sports",
+      "menuItems": [
+        "Basketball",        
+        "Swimming",        
+        "Bowling"        
+      ]
+    },
+    {
+      "displayTitle": "Spring Sports",
+      "menuItems": [        
+        "Softball",
+        "Track",        
+        "Lacrosse"        
+      ]
+    },
+    {
+      "displayTitle": "Awards",
+      "menuItems": [        
+        "College Commitments",
+        "Scholar Athletes",
+        "Huismann"
+      ]
+    },
+    {
+      "displayTitle": "History",
+      "menuItems": [
+        "All Sports Trophy",
+        "State Champions",
+        "League History"
+      ]
+    },
+    {
+      "displayTitle": "Social Media",
+      "menuItems": []
+    },
+    {
+      "displayTitle": "More",
+      "menuItems": [
+        "Ciny High School Sports",
+        "Archdiocese of Cincinnati",
+        "Women's Sports Foundation",
+        "Cincinnati CYS",
+        "OHSAA",
+        "OHSAA Southwest District",
+        "NCAA",
+        "NCAA Clearinghouse"
+      ]
+    }
+  ]
+}
