@@ -1,0 +1,51 @@
+.sportsweb-top-nav strong {
+    font-weight: 600;
+}
+
+@media (min-width: 992px) {
+    .sportsweb-top-nav .navbar-light {
+        height: 80px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .sportsweb-top-nav .navbar-brand {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 80px;
+    }
+
+    .sportsweb-top-nav .text-white {
+        color: rgba(256,256,256,0.8);
+    }
+
+    .sportsweb-top-nav .show>.text-white {
+        color: rgba(256,256,256,1);
+    }
+}
+
+.gn-background {
+    height: 80px;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2), 0 5px 8px 0 rgba(0,0,0,0.14), 0 1px 14px 0 rgba(0,0,0,0.12);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.gn-background:before {
+    background-color: #fff;
+}
+        
+.gn-background:before {
+    height: 34px;
+    top: 0;
+}
+
+.gn-background:after, .gn-background:before {
+    position: absolute;
+    right: 0;
+    left: 0;
+    content: "";
+}

@@ -1,7 +1,8 @@
 ﻿@using WebMVC.Extensions
 @model PageHeaderModel
 
-<nav class="yamm navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<nav class="sportsweb-top-nav yamm navbar navbar-expand-lg navbar-light bg-light fixed-top py-0">
+    <div class="gn-background" style="background-color: @Model.ColorCode" } ></div>
     <div class="container w-100">
         <a class="navbar-brand" href="#">
             <img src="~/assets/conferences-logos/@Model.LogoFileName" alt="logo"/>
@@ -19,11 +20,13 @@
         <div
             class="navbar-collapse collapse flex-column align-items-start"
             id="navbar-collapse-1">
-            <div class="d-flex justify-content-between mb-lg-3 w-100">
-                <span class="pl-2 d-none d-lg-block">@Model.ConferenceName</span>
+            <div class="d-flex justify-content-between mb-lg-2 w-100">
+                <span class="pl-2 d-none d-lg-block">
+                    <strong>@Model.ConferenceName</strong>
+                </span>
                 <div>
-                    <a class="pl-0 pl-lg-3 mobile-nav-link text-gray" href="#">Schools</a>
-                    <a class="pl-0 pl-lg-4 mobile-nav-link text-gray" href="#">Tickets</a>
+                    <a class="pl-0 pl-lg-3 mobile-nav-link text-dark-gray" href="#">Schools</a>
+                    <a class="pl-0 pl-lg-4 mobile-nav-link text-dark-gray" href="#">Tickets</a>
                 </div>
             </div>
             <ul class="navbar-nav mr-auto flex-row ul-main-menu">
@@ -31,7 +34,7 @@
                     foreach (var menuHeader in Model.MenuHeaders)
                     {
                         <li class="nav-item dropdown yamm-fw pr-lg-4">
-                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" data-toggle="dropdown">
                                 @menuHeader.DisplayTitle
                             </a>
                             <div class="dropdown-menu p-0">
