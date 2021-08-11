@@ -1,26 +1,64 @@
-.sportsweb-top-nav strong {
+.spw-top-nav strong {
     font-weight: 600;
 }
 
+.spw-top-nav .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 80px;
+}
+
+.gn-background:before {
+    height: 72px;
+    top: 0;
+}
+
+.gn-background-mobile {
+    height: 85%;
+    position: absolute;    
+    right: 0;
+    left: -20vw;
+    z-index: -1;    
+    width: 120vw;
+}
+
+.spw-top-nav .spw-text-white {
+    color: rgba(256,256,256,0.9) !important;
+}
+
+.spw-top-nav .show>.spw-text-white {
+    color: rgba(256,256,256,1) !important;
+}
+
 @media (min-width: 992px) {
-    .sportsweb-top-nav .navbar-light {
+    
+    .gn-background-mobile {
+        display: none;
+    }
+    
+    .spw-top-nav .navbar-light {
         height: 80px;
         padding-top: 0;
         padding-bottom: 0;
     }
 
-    .sportsweb-top-nav .navbar-brand {
-        padding-top: 0;
-        padding-bottom: 0;
+    .gn-background:before {
+        height: 34px;
+        top: 0;
+    }    
+}
+
+@media (max-width: 992px) {
+    .spw-top-nav strong {
+        color: rgba(256,256,256,0.9) !important;
+    }
+
+    .spw-top-nav .text-dark-gray {
+        color: rgba(256,256,256,0.9) !important;
+    }
+
+    .spw-top-nav .navbar-brand img{        
         height: 80px;
-    }
-
-    .sportsweb-top-nav .text-white {
-        color: rgba(256,256,256,0.8);
-    }
-
-    .sportsweb-top-nav .show>.text-white {
-        color: rgba(256,256,256,1);
     }
 }
 
@@ -36,11 +74,6 @@
 
 .gn-background:before {
     background-color: #fff;
-}
-        
-.gn-background:before {
-    height: 34px;
-    top: 0;
 }
 
 .gn-background:after, .gn-background:before {
